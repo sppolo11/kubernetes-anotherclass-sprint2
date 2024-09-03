@@ -10,10 +10,10 @@ spec:
     metadata:
     spec:
       nodeSelector:
-        kubernetes.io/hostname: k8s-master
+        kubernetes.io/hostname: k8s-worker1
       containers:
         - name: api-tester-2222
-          image: 1pro/api-tester:v1.0.0
+          image: sppolo11/api-tester:v1.0.0
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
